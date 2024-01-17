@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+ margin: 0;
+    transition: all 0.5s;
+    height: 100%;
+}
+
+
+
+   
+h3 {
+    text-shadow: rgba(29, 27, 27, 0.8);
+}
+
+body.active {
+    background-color: rgb(8, 8, 8);
+    color: #bbbbb9;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+body.active a {
+    color: #bbbbb9;
+}
+body.active #upper-nav {
+    border-bottom: 1px solid white;
+}
+
+body.active .switch-theme {
+    background-color: rgb(155, 117, 53);
+
+    transition: all 1s;
+}
+.switch-theme {
+    height: 2em;
+width: 3em;
+border-radius: 3px;
+border: 1px solid black;
+background-color: transparent;
+top: 0.5em;
+}
+
+.switch-theme:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.switch-theme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.wrapper-nav #search-bar {
+border-bottom: 2px solid rgba(0, 0, 0, .5); border-radius: 10px;
+height: 2em;
+width: 12em;
+margin: 5px 5px 0 0;
+
+transition: all 1s;
+}
+
+.search_here {
+width: 40px;
+height: 30px;
+border: none;
+top: 3px;
+background-color: transparent;
+position: absolute;
+right: 0;
+font-size: 20px;
+
+}
+
+
+
+#upper-nav {
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(0, 0, 0);
+        display: flex;
+        text-align: end;
+        align-items: center;
+    }
+
+    .wrapper-nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .wrapper-nav > a {
+        /* margin: top right bottom left; */
+       
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+       font-size: 1.2em;
+        cursor: pointer;
+      
+        transition: all 0.5s;
+    }
+
+    .wrapper-nav a:hover {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+       text-decoration: underline;
+    }
+
+    .slider-container {
+        width: 100%;
+        position: relative;
+        height: 12em;
+       /* z-index: -3; */
+    }
+
+    .slider-image {
+    position: absolute;
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    opacity: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    
+    transition: all 1s ease-in-out;
+    }
+
+    .show-img {
+        opacity: 1;
+    }
+
+
+    .gradient-overlay {
+       position: absolute; 
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        pointer-events: none; /* Allow interaction with the underlying content */
+        z-index: 2; /* Ensure the gradient overlay is above the images */
+    }
+
+ #name-img, #description-img {
+transition: all 1s;
+ }
+    .description-images {
+        color: white; z-index: 3;
+        position: relative; 
+        width: 30em;
+        word-wrap: break-word;
+        height: 100%;
+        overflow: hidden;
+        font-size: 11px;
+       /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+        float: left;
+        margin: 0 0 0 9px;
+        }
+
+        .open_mobile {
+          display: none;
+        }
+
+        .aside-nav {
+        width: 0;
+        pointer-events: none;
+        z-index: 1;
+      opacity: 0;
+        position: absolute;
+        background-color: black;
+        
+        }
+
+        .aside-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .aside-nav ul li {
+            margin: 7px 0 0 10px;
+            padding: 0;
+        }
+
+        .aside-nav ul li a {
+            color: #bbbbb9;
+            text-decoration: none;
+        }
+      /* Large Mobile || Small Mobile (640px). set to max-width.  */
+      @media (max-width: 640px) {
+        .open_mobile {
+          display: block;
+          font-size: 20px;
+          width: 2em;
+          height: 2em;
+          background-color: #ddddda;
+          border: 1px solid black;
+          border-radius: 3px;
+          margin: 0 10px 0 0;
+        }
+      
+        #closed-aside {
+            border-bottom: 1px solid #bbbbb9;
+        }
+        .wrapper-nav > a {
+          display: none;
+          pointer-events: none;
+        }
+        
+        .aside-nav > #closed-aside {
+            text-align: end;
+        }
+        #closed-aside {
+            font-size: 1.3em ;
+        }
+        /*
+        .aside-nav.on {
+            width: 12em;
+        } */
+        .aside-nav {
+          pointer-events: auto;
+          position: absolute;
+          height: 100vh;
+          width: 0;
+          opacity: 1;
+          overflow: hidden;
+          border-right: 1px solid #bbbbb9;
+         z-index: 5;
+
+          transition: all .5s ease-in-out;
+        }
+      }
+      
+
+/* Tablet (768px) and larger screens 
+@media (min-width: 768px) {
+    .open_mobile {
+        display: none;
+        pointer-events: none;
+    }
+
+    .wrapper-nav > a {
+        display: block;
+    }
+
+    .aside-nav {
+        visibility: hidden;
+        pointer-events: none;
+    }
+} */
+        

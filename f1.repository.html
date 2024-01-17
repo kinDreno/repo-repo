@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+quin proj git
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300;1,500&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="styleshit.css">
+</head>
+<body>
+    
+    <nav id="upper-nav">
+        <div class="wrapper_nav">
+            <div class="wrapper-waffen" style="display: flex; flex-direction: row;">
+                <h3>Welcome!</h3>
+                <button class="switch-theme"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" alt="Dark Mode"></button>
+            </div>
+                </div>
+                <div class="wrapper-nav">
+                    <div class="wrapper-waffen" style="display: flex; flex-direction: row;">
+                        <form action="search" style="position: relative; pointer-events: none;">
+                    <button class="search_here"><p style="color: black;">&#128270;</p></button>
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search" 
+                    onkeydown="
+                    console.log(event)
+                    ">
+                        </form>
+                </div>
+            </div>
+            <div class="wrapper-nav">  
+                <a href="#">Home</a>
+                <a href="#">Contacts</a>
+                <a href="#">About</a>
+            </div>
+            <div class="wrapper_nav">
+                <button class="open_mobile" onclick="toggleNav('open')">&#8801;</button>
+            </div>
+        </nav>
+   <!--Aside navigation for mobile users-->
+   <aside class="aside-nav">
+    <div id="closed-aside" style="color: #bbbbb9; cursor: pointer;" alt="closed button"><p style="margin: 0 0.7em 0 0;" 
+         onclick="toggleNav('close')">&#x2715;</p></div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</aside>
+    <article class="slider-container">
+        <!-- Your slider images -->
+        <div class="gradient-overlay"></div>
+        <img class='slider-image show-img' src="images/image1.webp">
+        <img class="slider-image" src="images/image2.webp">
+        <img class="slider-image" src="images/image3.webp">
+        <img class="slider-image" src="images/image4.webp">
+        <div class="description-images">
+            <h3 id="name-img" style="margin: 10px 0 5px 0;">LOLOLOL</h3>
+            <p id="description-img">Officia esse id cillum esse aliquip magna deserunt et ut et. Cillum labore non eu ullamco mollit esse ipsum do laborum.</p>
+        </div>
+    </article>
+    
+    <main class="home-page">
+        <section class="these">
+            <article class="wrappers-these">
+                
+            </article>
+        </section>
+    </main>
+
+    <script src="dom.js"></script>
+</body>
+</html>
+
