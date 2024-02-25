@@ -1,0 +1,83 @@
+/* css second page. Main Section. */
+
+.home-page {
+margin: 0;
+padding: 0;
+
+background-image: url('');
+}
+
+.wrappers-these {
+width: 50%;
+margin: 5px 5px;
+}
+
+ /*container in .home-page */ .these {
+display: flex;
+}
+
+.second-th {
+word-wrap: break-word;
+width: 50%;
+}
+
+.second-th p {
+    font-size: 11px;
+}
+
+.wrappers-these img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 9px;
+
+transition: all .5s;
+}
+
+.wrappers-these img:hover {
+    transform: translateX(9px);
+    box-shadow: 0 0 5px black;
+}
+
+#acou-second:hover {
+transform: translateX(-9px);
+}
+
+
+.main-w-ctnr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    border: 1.4px solid transparent;
+    margin: 12px 0 0 0;
+
+    transition: all 1s;
+}
+
+.main-w-ctnr:hover {
+   border-color: black;
+}
+
+.z-up {
+    position: relative;
+
+    transition: all .5s;
+}
+.z-up.upp {
+    z-index: 2;
+    text-shadow: 0 0 5px white;
+}
+
+.y-ux {
+    position: relative;
+}
+.y-ux.upp {
+    z-index: 2;
+    text-shadow: 0 0 5px white;
+}
+/* Mobile Users */
+@media (max-width: 640px) {
+
+}

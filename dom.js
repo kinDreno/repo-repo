@@ -2,13 +2,15 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('Opened Sucessfully')
 })
 
-const darkLight = document.querySelector('.switch-theme');
+const darkLight = document.querySelectorAll('.switch-theme');
 
-darkLight.addEventListener('click', (e) => {
+darkLight.forEach((drk) => {
+    drk.addEventListener('click', (e) => {
    
-    document.body.classList.toggle('active');
-   console.log('tapped')
-})
+        document.body.classList.toggle('active');
+       console.log('tapped')
+    })
+});
 
 // html tags here
 const imageSlides = document.querySelectorAll('.slider-image');
@@ -25,8 +27,7 @@ const imageBannerText = [
 }, {name:  'dominican republic', description: 'Reprehenderit amet minim laboris duis eiusmod exercitation magna. Ex eiusmod occaecat reprehenderit anim. Ad sunt magna laborum officia nulla culpa nostrud reprehenderit nisi ut Lorem. Occaecat occaecat non Lorem dolore adipisicing reprehenderit qui ea labore minim amet.'
 }];
 
-
-setInterval(() => {
+const slides = setInterval(() => {
 
     imageSlides[imageIndex].classList.remove('show-img');
     nameImgSld.innerText = imageBannerText[imageIndex].name
@@ -74,7 +75,6 @@ function toggleNav(kill) {
 
 }
 // MAIN WINDOW TARGET FUNCTION IN DOM 
-window.addEventListener('click', (e) => {
 
    // MAIN WINDOW TARGET FUNCTION IN DOM 
 window.addEventListener('click', (e) => {
@@ -84,6 +84,23 @@ window.addEventListener('click', (e) => {
     }
 });
 
-})
 
+/*
 console.log('lol')
+
+const tt = document.querySelector('#col');
+let ind = 0;
+
+const color = ['black', 'red', 'blue', 'cyan', 'orange'];
+
+
+setInterval(() => {
+ind++
+tt.style.backgroundColor = color[ind];
+
+switch (ind) {
+case 5 - 1:
+    ind = 0
+    break;
+}
+}, 300) */

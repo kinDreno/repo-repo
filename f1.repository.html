@@ -1,75 +1,146 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <title>
-quin proj git
-        </title>
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300;1,500&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="styleshit.css">
-</head>
-<body>
-    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,200;1,300;1,500&display=swap" rel="stylesheet">
+
+               <link rel="stylesheet" href="styleshit.css">
+               <link rel="stylesheet" href="stylesht-2.css">
+    </head>
+    <body>
+        
+    <!--mobile side nav for mobile users-->
+    <aside class="aside-nav">
+        <div id="closed-aside" style="color: #bbbbb9; cursor: pointer;" alt="closed button"><p style="margin: 0 0.7em 0 0;" 
+             onclick="toggleNav('close')">&#x2715;</p></div>
+        <ul>
+            <button class="switch-theme mobile-mode-drk"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" alt="Dark Mode"></button>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </aside>
+    <!--End of side nav-->
+
+
+    <header id="name-here"><i>Suedd Online</i>
+        <img src="images/logo-header.png" alt="logo here"><a href="#">Wanna know more?</a>
+    </header>
     <nav id="upper-nav">
         <div class="wrapper_nav">
             <div class="wrapper-waffen" style="display: flex; flex-direction: row;">
-                <h3>Welcome!</h3>
-                <button class="switch-theme"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" alt="Dark Mode"></button>
+            <h3>Welcome!</h3>
+
+                <!--Dark mode button in the nav-->
+                <button title="Dark Mode" class="switch-theme remove-mobile"><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" alt="Dark Mode"></button>
             </div>
-                </div>
+            </div>
                 <div class="wrapper-nav">
                     <div class="wrapper-waffen" style="display: flex; flex-direction: row;">
                         <form action="search" style="position: relative; pointer-events: none;">
-                    <button class="search_here"><p style="color: black;">&#128270;</p></button>
-                    <input type="text" name="search-bar" id="search-bar" placeholder="Search" 
+                        <button class="search_here"><p style="color: black;">&#128270;</p></button>
+                        <input type="text" name="search-bar" id="search-bar" placeholder="Search" 
                     onkeydown="
                     console.log(event)
                     ">
                         </form>
-                </div>
             </div>
+            </div>
+            
+            <!--Navigation site on desktop-->
             <div class="wrapper-nav">  
-                <a href="#">Home</a>
+            <div class="uneven-class-tag remove-mobile" 
+            style="display: flex;
+                 flex-direction: row;
+                  width: 100%;">
+              <strong>  <a href="#">Home</a>
                 <a href="#">Contacts</a>
                 <a href="#">About</a>
+              </strong>
+            </div>
             </div>
             <div class="wrapper_nav">
                 <button class="open_mobile" onclick="toggleNav('open')">&#8801;</button>
             </div>
         </nav>
    <!--Aside navigation for mobile users-->
-   <aside class="aside-nav">
-    <div id="closed-aside" style="color: #bbbbb9; cursor: pointer;" alt="closed button"><p style="margin: 0 0.7em 0 0;" 
-         onclick="toggleNav('close')">&#x2715;</p></div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</aside>
+   
     <article class="slider-container">
         <!-- Your slider images -->
         <div class="gradient-overlay"></div>
-        <img class='slider-image show-img' src="images/image1.webp">
-        <img class="slider-image" src="images/image2.webp">
-        <img class="slider-image" src="images/image3.webp">
-        <img class="slider-image" src="images/image4.webp">
+        <img class='slider-image show-img' src="images/slider/image-1.jpg">
+        <img class="slider-image" src="images/slider/image-2.jpg">
+        <img class="slider-image" src="images/slider/image-3.webp">
+        <img class="slider-image" src="images/slider/image-4.jpeg">
         <div class="description-images">
             <h3 id="name-img" style="margin: 10px 0 5px 0;">LOLOLOL</h3>
-            <p id="description-img">Officia esse id cillum esse aliquip magna deserunt et ut et. Cillum labore non eu ullamco mollit esse ipsum do laborum.</p>
+            <p id="description-img">Officia esse id cillum esse aliquip magna deserunt et ut et. Cillum labore non eu ullamco mollit esse ipsum do laborum.           
+            </p>
         </div>
     </article>
     
+    <!--Main section of the web. options-->
     <main class="home-page">
-        <section class="these">
-            <article class="wrappers-these">
-                
-            </article>
-        </section>
+
+    <div class="main-w-ctnr">
+        <img class="absolute-img" src="" alt="">
+    <article class="wrappers-these">
+                <img class="image-th" src="images/guitars pic/guitar-l1.webp" alt="">
+    </article>
+    <article class="second-th">
+        <!-- title and description -->
+                <h3 class="z-up">Electric Guitar</h3>
+                <p class="y-ux">Labore voluptate pariatur dolor est nulla veniam id ullamco ad incididunt culpa culpa. 
+                    Adipisicing sint nulla dolore fugiat labore laboris eiusmod Lorem exercitation sint est eu.
+                     Sunt aliqua cupidatat ut veniam nisi commodo reprehenderit sit sint ex pariatur.
+                    </p>
+    </article>
+    </div>
+
+    <div class="main-w-ctnr">
+        <img class="absolute-img" src="" alt="">
+        <article class="second-th">
+            <h3 class="z-up">Acoustic Guitar</h3>
+            <p class="y-ux">Elit quis voluptate elit eiusmod velit exercitation. Magna qui veniam Lorem ipsum sit aute adipisicing nostrud labore eu incididunt qui est magna. 
+            </p>
+        </article>
+     <article class="wrappers-these">
+    <img class="image-th" id="acou-second" src="images/guitars pic/guitar-l3.jpg" alt="">
+    </article>
+    </div>
+
+
+    <div class="main-w-ctnr">
+        <img class="absolute-img" src="" alt="">
+    <article class="wrappers-these">
+        <img class="image-th" src="images/guitars pic/guitar-l4.jpg" alt="">
+    </article>
+    <article class="second-th">
+        <h3 class="z-up">Bass Guitar</h3>
+        <p class="y-ux">In enim est consequat commodo fugiat cillum est duis officia non consequat. Irure exercitation dolore ut sunt duis aliqua culpa. Lorem consequat occaecat ullamco velit sunt cupidatat laboru
+            it minim magna commodo consequat exercitation officia.</p>
+    </article>
+    </div>
+<!-- main-w-ctnr for the container of each main.
+.absolute-image is used for slide image in each shit
+-->
     </main>
 
+ <!--  <button id="col">Hi</button> -->
     <script src="dom.js"></script>
+    <script src="com.js"></script>
 </body>
 </html>
+
 
