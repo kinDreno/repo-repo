@@ -104,8 +104,6 @@ font-size: 20px;
 
 }
 
-
-
 #upper-nav {
         width: 100%;
         height: 60px;
@@ -116,15 +114,15 @@ font-size: 20px;
         position: relative;
     }
 
-    .wrapper-nav {
+.wrapper-nav {
         position: sticky;
     width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
-    }
+}
 
-    .wrapper-nav a {
+.wrapper-nav a {
         /* margin: top right bottom left; */
        
         margin: 0 5px;
@@ -133,20 +131,20 @@ font-size: 20px;
        font-size: 1.2em;
         cursor: pointer;
       
-    }
+}
 
-    .wrapper-nav a:hover {
+.wrapper-nav a:hover {
         text-shadow: 0 0 5px rgba(87, 83, 83, 0.8);
        border-bottom: 3px solid black;
-    }
+}
 /* headers /// */
-    .slider-container {
+.slider-container {
         width: 100%;
         position: relative;
         height: 18em;
         overflow: hidden;
        /* z-index: -3; */
-    }
+}
 
 .slider-image {
     position: absolute;
@@ -157,11 +155,11 @@ font-size: 20px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     
     transition: all 1s ease-in-out;
-    }
+}
 
 .show-img {
         opacity: 1;
-    }
+}
 
 
 .gradient-overlay {
@@ -171,12 +169,12 @@ font-size: 20px;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
         pointer-events: none; /* Allow interaction with the underlying content */
         z-index: 2; /* Ensure the gradient overlay is above the images */
-    }
+}
 
- #name-img, #description-img {
+#name-img, #description-img {
 transition: all 1s;
- }
-    .description-images {
+}
+.description-images {
         color: white; z-index: 3;
         position: relative; 
         width: 30em;
@@ -187,13 +185,13 @@ transition: all 1s;
        /* text-shadow: 0 0 5px rgb(255, 255, 255); */
         float: left;
         margin: 0 0 0 9px;
-        }
+}
 
-        .open_mobile {
+.open_mobile {
           display: none;
-        }
+}
 
-        .aside-nav {
+.aside-nav {
         width: 0;
         pointer-events: none;
         z-index: 1;
@@ -207,23 +205,23 @@ transition: all 1s;
             margin: 0;
             padding: 0;
             list-style-type: none;
-        }
+}
 
-        .aside-nav ul li {
+.aside-nav ul li {
             margin: 7px 0 0 10px;
             padding: 0;
-        }
+}
 
-        .aside-nav ul li a {
+.aside-nav ul li a {
             color: #bbbbb9;
             text-decoration: none;
-        }
+ }
 
-        #col {
+ #col {
             padding: 20px 20px;
 
             transition: all .5s;
-        }
+}
       /* Large Mobile || Small Mobile (640px). set to max-width.  */
       @media (max-width: 640px) {
 .open_mobile {
@@ -231,27 +229,29 @@ transition: all 1s;
           font-size: 20px;
           width: 2em;
           height: 2em;
-          background-color: #ffffff;
+          background-color: #ffffff00;
+          color: white;
+          text-shadow: 0 0 12px black;
        border: 1px solid rgb(0, 0, 0);
        cursor: pointer;
           border-radius: 3px;
           margin: 0 10px 0 0;
-        }
+}
       
 #closed-aside {
             border-bottom: 1px solid #bbbbb9;
-        }
+}
 .wrapper-nav a {
           display: none;
           pointer-events: none;
-        }
+}
         
 .aside-nav > #closed-aside {
             text-align: end;
-        }
+}
 #closed-aside {
             font-size: 1.3em ;
-        }
+}
         /*
         .aside-nav.on {
             width: 12em;
@@ -269,28 +269,28 @@ transition: all 1s;
          z-index: 5;
 
           transition: all .5s ease-in-out;
-        }
+}
 
-        .switch-theme {
+.switch-theme {
             opacity: 1;
-        }
+}
 
-        .mobile-mode-drk {
+.mobile-mode-drk {
             background-color: #bbbbb9;
-        }
+}
 
-        .slider-container {
+.slider-container {
 height: 17em;
-        }
+}
 
-        .slider-image {
+.slider-image {
             height: 100%;
-        }
+}
 
-        .remove-mobile {
+.remove-mobile {
             display: none;
-        }
-      }
+}
+}
       
 
 /* Tablet (768px) and larger screens 

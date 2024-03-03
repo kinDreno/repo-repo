@@ -3,11 +3,11 @@
 .home-page {
 margin: 0;
 padding: 0;
-
-background-image: url('');
 }
 
 .wrappers-these {
+    position: relative;
+    height: 22em;
 width: 50%;
 margin: 5px 5px;
 }
@@ -19,13 +19,26 @@ display: flex;
 .second-th {
 word-wrap: break-word;
 width: 50%;
+border-radius: 5px;
 }
 
 .second-th p {
     font-size: 11px;
 }
 
-.wrappers-these img {
+.image-loader-h {
+position: absolute;
+border-radius: 9px;
+display: none;
+width: 100%;
+height: 100%;
+}
+
+.image-loader-h.opacity-load {
+    object-fit: cover;
+}
+
+.wrappers-these .image-th {
 width: 100%;
 height: 100%;
 object-fit: cover;
@@ -34,13 +47,32 @@ border-radius: 9px;
 transition: all .5s;
 }
 
-.wrappers-these img:hover {
+.image-th.light-rdc {
+    opacity: 1;
+    filter: brightness(50%);
+}
+.image-th {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+
+    transition: all .5s;
+}
+
+body.active .wrappers-these .image-th:hover {
+    box-shadow: 0 0 12px white;
+}
+
+.wrappers-these .image-th:hover {
     transform: translateX(9px);
+    transform: scale(15px);
     box-shadow: 0 0 5px black;
 }
 
 #acou-second:hover {
 transform: translateX(-9px);
+transform: scale(15px);
 }
 
 
@@ -57,7 +89,15 @@ transform: translateX(-9px);
 }
 
 .main-w-ctnr:hover {
-   border-color: black;
+   /* border-color: black; */
+}
+
+.absolute-hovers {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .z-up {
